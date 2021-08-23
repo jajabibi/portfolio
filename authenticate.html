@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password</title>
+  <style type="text/css" scoped="scoped">
+    html, body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+
+    body {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .container {
+      padding: 2ex;
+    }
+
+    #password {
+      padding: 0;
+      border: 0;
+      background-color: transparent;
+      font-size: 5ex;
+
+      border-bottom: 1px solid #0074D9;
+      min-width: 11em;
+    }
+
+    #password:focus {
+      outline: none;
+    }
+
+    .item {
+      /*width: 200px;*/
+      /*height: 50px;*/
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <form action="authenticate" method="post">
+    <input id="password" name="password" type="password" placeholder="Enter password to view" autofocus/>
+  </form>
+</div>
+</body>
+</html>

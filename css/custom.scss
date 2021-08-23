@@ -1,0 +1,32 @@
+@import "stakeholder";
+@import "apps";
+
+.profile-image {
+  width: 200px;
+}
+
+.divider {
+  height: 20px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-content: center;
+
+  svg {
+    margin: 15px;
+    width: 20px;
+    height: 20px;
+
+    &.rect {
+      fill: #5FE7E0;
+    }
+
+    &.triangle {
+      fill: #48CAF5;
+    }
+
+    &.circle {
+      fill: #F674EB;
+    }
+  }
+}
